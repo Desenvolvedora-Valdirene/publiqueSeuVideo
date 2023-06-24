@@ -1,0 +1,57 @@
+<<!DOCTYPE html>
+<html>
+<head>
+    <title>Publique seu video!</title>
+    <style>
+        /* Estilos CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            margin-bottom: 10px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="text"],
+        input[type="file"] {
+            padding: 5px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Publique seu vídeo!</h1>
+
+    <h2>Upload de Vídeo</h2>
+    <form action="processar_upload.php" method="POST" enctype="multipart/form-data">
+        <input type="file" name="video" accept="video/*">
+        <input type="submit" value="Enviar Vídeo">
+    </form>
+
+    <h2>Inserir a URL do Vídeo</h2>
+    <form action="processar_url.php" method="POST">
+        <input type="text" name="url" placeholder="Insira a URL do vídeo">
+        <input type="submit" value="Enviar URL">
+    </form>
+
+    <script>
+        // JavaScript
+        // Você pode adicionar scripts JavaScript aqui para manipular eventos ou realizar ações adicionais.
+        // Por exemplo, você pode adicionar validação de formulário antes de enviá-lo.
+    </script>
+</body>
+</html>
